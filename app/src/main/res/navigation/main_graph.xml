@@ -18,5 +18,12 @@
         android:id="@+id/completeFragment"
         android:name="com.odougle.navigationapi.fragments.CompleteFragment"
         android:label="@string/fragment_complete_label"
-        tools:layout="@layout/fragment_complete" />
+        tools:layout="@layout/fragment_complete" >
+        <argument
+            android:name="full_name"
+            app:argType="string" />
+        <argument
+            android:name="age"
+            app:argType="integer" />
+    </fragment>
 </navigation>

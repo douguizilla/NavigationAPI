@@ -21,4 +21,13 @@ class CompleteFragment : Fragment() {
         return binding.root
     }
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        arguments?.run {
+            val fullName = getString("full_name")
+            val age = getInt("age")
+            binding.txtMessage.text = "$fullName - $age"
+        }
+    }
+
 }

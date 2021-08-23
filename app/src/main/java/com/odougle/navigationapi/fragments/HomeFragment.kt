@@ -25,7 +25,11 @@ class HomeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding.btnGo.setOnClickListener {
-            findNavController().navigate(R.id.action_homeFragment_to_completeFragment)
+            val args = Bundle().apply {
+                putString("full_name", "Douglas Gomes")
+                putInt("age", 24)
+            }
+            findNavController().navigate(R.id.action_homeFragment_to_completeFragment, args)
         }
     }
 
