@@ -1,7 +1,8 @@
-package com.odougle.navigationapi
+package com.odougle.navigationapi.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.odougle.navigationapi.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
