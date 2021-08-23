@@ -9,5 +9,14 @@
         android:id="@+id/homeFragment"
         android:name="com.odougle.navigationapi.fragments.HomeFragment"
         android:label="@string/fragment_home_label"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_completeFragment"
+            app:destination="@id/completeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/completeFragment"
+        android:name="com.odougle.navigationapi.fragments.CompleteFragment"
+        android:label="@string/fragment_complete_label"
+        tools:layout="@layout/fragment_complete" />
 </navigation>
