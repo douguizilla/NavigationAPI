@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">NavigationAPI</string>
-    <!-- TODO: Remove or change this placeholder text -->
+
     <string name="home_text_fragment">HOME</string>
     <string name="button_text_label">GO!</string>
+
+    <string name="complete_text">Complete</string>
 </resources>
